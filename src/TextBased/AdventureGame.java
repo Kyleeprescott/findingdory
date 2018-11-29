@@ -12,10 +12,20 @@ public static void tank (Scanner input) {
 System.out.println("Welcome to Finding Dory!");
 System.out.println("You are Nemo. You are trying to save Dory.");
 System.out.println("You are currently in your tank you have two options: ");
-System.out.println("You can either clog the filtration system(clog)");
-System.out.println("Or you can pretend to be dead(pretend)");
-String question = input.next();
+System.out.println(" __ _     _     _              _    \r\n" + 
+		" / _(_)   | |   | |            | |   \r\n" + 
+		"| |_ _ ___| |__ | |_ __ _ _ __ | | __\r\n" + 
+		"|  _| / __| '_ \\| __/ _` | '_ \\| |/ /\r\n" + 
+		"| | | \\__ \\ | | | || (_| | | | |   < \r\n" + 
+		"|_| |_|___/_| |_|\\__\\__,_|_| |_|_|\\_\\\r\n" + 
+		"                                     \r\n" + 
+		"                  ");
+
+
 while(true) {
+	System.out.println("You can either clog the filtration system(clog)");
+	System.out.println("Or you can pretend to be dead(pretend)");
+	String question = input.next();
 	if (question.startsWith("clog")) {
 		putinabag(input);
 		break;
@@ -26,7 +36,7 @@ while(true) {
 	}
 	else {
 		System.out.println("try again");
-		break;
+		
 	}
 	}
   }
@@ -61,10 +71,11 @@ System.out.println("MMMMMMMMMMMMMMMMMMMMMMNKXWMMMMMMMMMWMMMMMMMMMMMMMM\r\n" +
 		"KKX000KK00KKKXK000KKXWMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n" + 
 		"");
 System.out.println("You know have to choices you can:");
-System.out.println("Roll left");
-System.out.println("Roll right");
-String question = input.next();
+
 while(true) {
+	System.out.println("Roll left");
+	System.out.println("Roll right");
+	String question = input.next();
 	if (question.startsWith("left")) {
 		left(input);
 		break;
@@ -75,7 +86,7 @@ while(true) {
 	}
 	else {
 		System.out.println("try again");
-		break;
+		
 	}
 	}
   }
@@ -114,10 +125,11 @@ System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n" +
 public static void right(Scanner input) {
 System.out.println("You rolled out of the widow.");
 System.out.println("You have two options:");
-System.out.println("Roll across the street(roll)");
-System.out.println("Get a ride from a pelican(ride)");
-String question = input.next();
+
 while(true) {
+	System.out.println("Roll across the street(roll)");
+	System.out.println("Get a ride from a pelican(ride)");
+	String question = input.next();
 	if (question.startsWith("roll")) {
 		acrossthestreet(input);
 		break;
@@ -128,23 +140,30 @@ while(true) {
 	}
 	else {
 		System.out.println("try again");
-		break;
+		
 	}
 	}
   }
 public static void acrossthestreet(Scanner input) {
 		System.out.println("You rolled across the street succsesfully!");
 		System.out.println("You are now in the ocean");
+		System.out.println("___   ___ ___  __ _ _ __  \r\n" + 
+				" / _ \\ / __/ _ \\/ _` | '_ \\ \r\n" + 
+				"| (_) | (_|  __/ (_| | | | |\r\n" + 
+				" \\___/ \\___\\___|\\__,_|_| |_|\r\n" + 
+				"                            \r\n" + 
+				"                            ");
 		tookarigth(input);
 				
 	      }
 public static void ridefrompelican(Scanner input) {
-System.out.println("You ended up on a boyee in the middle of the ocean with a friendly pelican.");
+System.out.println("You ended up on a bouy in the middle of the ocean with a friendly pelican.");
 System.out.println("You have two options:");
-System.out.println("You can continue to talk to the pelican(talk)");
-System.out.println("You can swim down(swim)");
-String question = input.next();
+
 while(true) {
+	System.out.println("You can continue to talk to the pelican(talk)");
+	System.out.println("You can swim down(swim)");
+	String question = input.next();
 	if (question.startsWith("talk")) {
 		talktopelican(input);
 		break;
@@ -155,7 +174,7 @@ while(true) {
 	}
 	else {
 		System.out.println("try again");
-		break;
+		
 	}
 	}
   }
@@ -222,10 +241,11 @@ public static void pretendtobedead(Scanner input) {
 System.out.println("You have been flushed.");
 System.out.println("You are now in the sewers!");
 System.out.println("You have two options:");
-System.out.println("You can take a right ");
-System.out.println("You can take a left");
-String question = input.next();
+
 while(true) {
+	System.out.println("You can take a right ");
+	System.out.println("You can take a left");
+	String question = input.next();
 	if (question.startsWith("right")) {
 		tookarigth(input);
 		break;
@@ -236,7 +256,7 @@ while(true) {
 	}
 	else {
 		System.out.println("try again");
-		break;
+		
 	}
 	}
   }
@@ -274,10 +294,11 @@ public static void tookaleft(Scanner input) {
            public static void tookarigth(Scanner input) {
         	 System.out.println("You ended up in the ocean.");           
            	System.out.println("You have two options:");             
-           	System.out.println("You can talk to a whale (talk) ");             
-           	System.out.println("You can just keep swimming!!(swim)");               
-           	String question = input.next();                          
-           	while(true) {                                            
+           	                       
+           	while(true) {                  
+           		System.out.println("You can talk to a whale (talk) ");             
+               	System.out.println("You can just keep swimming!!(swim)");               
+               	String question = input.next();   
            		if (question.startsWith("talk")) {                  
            			talktoawhale(input);                                  
            			break;                                           
@@ -288,7 +309,7 @@ public static void tookaleft(Scanner input) {
            		}                                                    
            		else {                                               
            			System.out.println("try again");    
-           			break;
+           			
            		}                                                    
            		}                                                    
                  }
@@ -320,10 +341,11 @@ public static void tookaleft(Scanner input) {
         	   		"");
           	 System.out.println("You have ran into a jellyfish feild.");           
              	System.out.println("You have two options:");             
-             	System.out.println("You can swim over it(over)");             
-             	System.out.println("You can test your luck and swim through the jellyfish feild(through)");               
-             	String question = input.next();                          
-             	while(true) {                                            
+             	                       
+             	while(true) {     
+             		System.out.println("You can swim over it(over)");             
+                 	System.out.println("You can test your luck and swim through the jellyfish feild(through)");               
+                 	String question = input.next();   
              		if (question.startsWith("over")) {                  
              			swimoverit(input);                                  
              			break;                                           
@@ -334,7 +356,7 @@ public static void tookaleft(Scanner input) {
              		}                                                    
              		else {                                               
              			System.out.println("try again");    
-             			break;
+             			
              		}                                                    
              		}                                                    
                    }
@@ -371,12 +393,13 @@ public static void tookaleft(Scanner input) {
             	 		"MMMMMMMMMMMWMMMN0dl:;:dXMMMMMMMWMMMMMMMMMMMMMMMMMM\r\n" + 
             	 		"MMMMMMMMMMMMMMMMMWXko:,xWMMMMMMMMMMMMMMMMMMWNNNNNN\r\n" + 
             	 		"");
-            	 System.out.println("The blue whale tells you that Dory isnt far from you!Infact do you see that boyee over there? She's not to far from there he says!."); 
+            	 System.out.println("The blue whale tells you that Dory isnt far from you!Infact do you see that bouy over there? She's not to far from there he says!."); 
                	System.out.println("You have two options:");             
-               	System.out.println("You can swim over to the boyee and trust the whale (swim)");             
-               	System.out.println("You can continue to talk to the whale to get more infromation(talk)");               
-               	String question = input.next();                          
-               	while(true) {                                            
+               	                          
+               	while(true) {            
+               		System.out.println("You can swim over to the bouy and trust the whale (swim)");             
+                   	System.out.println("You can continue to talk to the whale to get more infromation(talk)");               
+                   	String question = input.next();
                		if (question.startsWith("swim")) {                  
                			youtrustthewhale(input);                                  
                			break;                                           
@@ -387,13 +410,13 @@ public static void tookaleft(Scanner input) {
                		}                                                    
                		else {                                               
                			System.out.println("try again"); 
-               			break;
+               			continue;
                		}                                                    
                		}                                                    
                      }
            public static void continuetotalktowhale(Scanner input) {
           	 System.out.println("You have and the blue whale have a good conversation."); 
-          	 System.out.println("The blue whale tells you that Dory is on the east side of the boyee."); 
+          	 System.out.println("The blue whale tells you that Dory is on the east side of the bouy."); 
              	System.out.println("Right as you begin to swim over that way to find Dory she gets taken by a boat. ");             
              	System.out.println("You have lost your chance to get Dory!  "); 
              	
